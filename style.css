@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 436px;
+
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    z-index: -1;
+    background: #535971;
+}
+
+.page {
+    width: 750px;
+    margin: auto;
+   
+}
+header{
+    width: 319px;
+
+    margin-top: 74px;
+}
+
+header h1{
+    font-family: 'Staatliches', cursive;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+header p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+legend {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #535971;
+
+}
+
+p{
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+
+
+
+
+    color: #535971;
+}
+form{
+
+
+    width: 750px;
+
+    height: 1084px;
+    left: 345px;
+    top: 320px;
+
+    
+
+    background: white;
+
+    border-radius: 20px 20px 0 0;
+
+    min-height: 1084px;
+
+    padding: 64px;
+
+    /*deixando todos os espaços padram da wrapper=form da espacamento de fieldeset */
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+}
+
+fieldset{
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+ 
+    gap: 24px;
+}
+
+fieldset legend {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+
+    width: 100%;
+    border-bottom: 1px solid #e6e6f0;
+    padding-bottom: 16px;
+}
+
+
+.col-1 label {
+    display: flex;
+   
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label,
+.checkbox-wrapper label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* indentical to box height, or 171% */
+    color: #535971;
+    margin-bottom: 8px;
+
+}
+
+.input-wrapper label span {
+ 
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+
+color: #4E4958;
+   
+}
+
+.input-wrapper label span:hover {
+  
+    color: #535971;
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+    background: #efefef;
+    border: 1px solid #ededf8;
+    border-radius: 8px;
+    
+    height: 56px;
+
+    padding: 0 24px;
+
+    box-sizing: border-box;
+
+    font-size: 16px;
+    line-height: 26px;
+   
+    color: #edebf3;
+}
+
+.input-wrapper textarea {
+    padding: 0;
+    height: 168px;
+}
+
+.input-wrapper select{
+    appearance: none;
+
+    /* para funcionar no mozila e outros navegadores tirando a cetinha pra baixo*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    /* propriedade para por uma url e falar de onde quero trazer a imagem para essa pagina, 
+    O link usado para o svg foi -> https://yoksel.github.io/url-encoder/*/
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+   
+
+    /* usado para não repetir a imagem de fundo*/
+    background-repeat: no-repeat;
+
+    /* para mudar a posição da imagem e o tamanho*/
+    background-position: right 24px top 50%;
+
+}
+
+.col-1 {
+    display: flex;
+    color: #535971;
+ 
+ 
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.col-1 > div:nth-child(1) {
+    width: 100%;
+
+  left: 64px;
+}
+
+.col-1 > div:nth-child(2) {
+    width: 100%;
+
+    left: 407px;
+  
+}
+
+.col-2 {
+    display: flex;
+    color: #535971;
+ 
+ 
+    gap: 20px;
+  
+}
+.col-2 > div:nth-child(1) {
+    width: 100%;
+
+  
+}
+
+.col-3 {
+    display: flex;
+ 
+ 
+    gap: 20px;
+    color: #535971;
+  
+}
+.col-3 > div:nth-child(1) {
+    width: 100%;
+ 
+
+  
+}
+
+.checkbox-wrapper {
+    position: relative;
+}
+
+.checkbox-wrapper label{
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+
+
+    margin: 0;
+}
+
+/*Para o input desapareser
+.checkbox-wrapper input {
+    display: none;
+
+}*/
+.checkbox-wrapper input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+/*deixa o elemento invisivel*/
+    opacity: 0;
+}
+
+.checkbox-wrapper label::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    border: 1px solid #e6e6f0;
+    border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.checkbox-wrapper input:focus + label::before {
+    /* Ao ser selecionada aparecera borda pretar de identificação*/
+    outline: 2px solid black;
+
+}
+
+footer {
+   background: #535971;
+
+    height: 136px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 64px;
+
+    margin-bottom: 100px;
+
+    border-top:1px solid #d6d6d6;
+    border-radius: 0 0 20px 20px;
+}
+
+footer .button {
+    height: 56px;
+    background: #FF5374;
+    border: 0;
+    border-radius: 20px;
+    
+    font-family: 'Archivo';
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #ffffff;
+}
+
+footer .button:hover {
+    background: #f13c60;
+}
+
+input:invalid {
+border: 1px solid #ff1010  ;
+}
